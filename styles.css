@@ -32,6 +32,8 @@ header{
     color: white;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+    box-shadow:  0px 2px 6px rgba(0,0,0,0.2);;
+    font-size: 20px;
 }
 
 .nav_links li a:hover {
@@ -61,6 +63,7 @@ header{
     left: 0;
     min-width: 100%;
     min-height: 100%;
+    scale: 130%;
 }
 
 .body{
@@ -152,13 +155,22 @@ header{
 }
 
 .mining-container {
+    position: relative;
+    width: 100%;
     padding: 30px;
-    height: 25vh;
-    justify-content: center;  
-    background-image: url(images/mole.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+.mining-container img{
+    position: absolute;
+    object-fit: cover;
+
+}
+
 
 .salvage-container {
     padding: 30px;
